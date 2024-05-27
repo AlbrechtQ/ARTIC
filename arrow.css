@@ -1,0 +1,99 @@
+
+
+.arrow-bottom {
+    position: absolute;
+    top: 4rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: rotate(0deg);
+
+}
+
+.span-bottom {
+    display: block;
+    width: 0.9rem;
+    height: 0.9rem;
+    border-top: 0;
+    border-left: 0;
+    border-bottom-width: 0.2rem;
+    border-right-width: 0.2rem;
+    border-style: solid;
+    border-color: black;
+    transform: rotate(45deg);
+    margin: -0.6rem;
+    animation-name: animate;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.first {
+    animation-delay: -0.2s;
+}
+
+.second {
+    animation-delay: -0.3s;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+}
+
+
+
+.arrow-right {
+    position: absolute;
+    top: 50%;
+    left: 4rem;
+    transform: translate(-50%, -50%);
+    transform: rotate(270deg);
+
+}
+
+.span-right {
+    display: block;
+    width: 0.9rem;
+    height: 0.9rem;
+    border-top: 0;
+    border-left: 0;
+    border-bottom-width: 0.2rem;
+    border-right-width: 0.2rem;
+    border-style: solid;
+    border-color: black;
+    transform: rotate(45deg);
+    margin: -0.6rem;
+    animation-name: animate;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.first {
+    animation-delay: -0.2s;
+}
+
+.second {
+    animation-delay: -0.3s;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-1.25rem, -1.25rem);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(1.25rem, 1.25rem);
+    }
+}

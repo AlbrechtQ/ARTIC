@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARTIC Ratio Explorer</title>
+
+
+    
+  <link rel="icon" type="image/x-icon" href="https://www.artic.edu/favicon.ico">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="arrow.css">
+    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="infomodal.css">
+    
+    <link rel="stylesheet" href="faqmodal.css">
+    
+
+</head>
+<body>
+
+ <!-- The Modal -->
+ <div class="info-modal">
+
+    <!-- Modal content -->
+    <div class="info-modal-content">
+      <span class="info-close">&times;</span>
+      <div class="about-content">
+        
+        <h2 class="about-title">ARTIC Collection Explorer: discover artworks by dimension/canvas ratio.</h2>
+        <hr>
+        <img class="mock-img" src="mock_img.png" alt="">
+      <p>This app was created as a lightweight alternative to traditional ways of browsing major artworks of the Art Institute of Chicago.
+        By gently dragging the sides of ARTIC's logo on the upper left corner of the page, users can explore a variety of the collection's artworks.</p>
+        <p> Since ratio is the only property taken into account when sorting artworks, this tool allows for a surprising mix of genres, styles and historical
+        periods to appear on the page. Such chaotic approach to browsing ARTIC's artworks wants to simulate the experience of a visitor taking a casual walk
+        through the museum's premises where all masterpieces of the collection have been shuffled, and reorganized according to ratio.</p><br>
+        <p> This user interface lets the viewer actively partecipate in the artworks' sorting action, making the experience a bit more engaging.
+        The icons on the right side allow for either extra shuffling, returning to the original square format and finally inverting ratio
+         (ie exchanging width with height), in order to browse inverted artworks of a specific format.
+
+      </p>
+    </div>
+    </div>
+  
+  </div>
+
+
+  <!-- The Modal -->
+ <div class="faq-modal">
+
+    <!-- Modal content -->
+    <div class="faq-modal-content">
+      <span class="faq-close">&times;</span>
+      <div class="faq-content">
+        
+        <h2 class="faq-title">FAQs.</h2>
+        <hr>
+      <p>  <b>How many artworks can I browse through with this tool? Why can I not see all the artworks?</b>
+
+        <p> Although the Art Institute of Chicago is home to more than 300,000 artworks, this tool allows you to browse through only around 400 works which are considered major and most representative. The choice to display only selected works was made to allow users to explore and enjoy the collection's icons without the overall experience being 'diluted' by the very high number of items the institution owns.
+        Therefore, this tool is not intended as a comprehensive way to browse the full collection. For such purpose, please visit ARTIC's official website here.</p><br>
+        
+        
+        <b>How did you choose what major artwork to include?</b>
+        
+        <p> All artworks which you can explore here were selected as major artworks by the curators of the institute themselves. These works were marked as 'boosted' in the Art Institute of Chicago API, meaning that they were considered more important/representative compared to other artworks.</p><br>
+        
+        
+        <b>Does the ratio of the logo/searchbox exactly corresponds to the ratio of the artworks being shown?</b>
+        
+        <p>  The ratio is very close to the paintings/sculpture being shown but it's not 100% indentycal. In order to guarantee a good number of artworks being shown in each search, it was preferred to show artworks in a close range to that ratio rather than exactly 1:1 with the selected ratio.</p><br>
+        
+        <b>The logo/searchbox occasionally does not seem to trigger any search, why does this happen?</b>
+        
+        <p> The logo/searchbox triggers a search every 1/10 of a second. This is to prevent too much 'shuffling' of artworks while the search box is being resized, which could be distressing to the viewer. For this reason, very quick and abrupt drags of the sides of the box could cause the search to slightly lag behind. In case this happens, just click the refresh icon on the right side. For a smoother experience, it is advised to slowly and gently drag the sides of the search box and allow artworks to come up naturally.</p><br> 
+        
+
+      </p>
+    </div>
+    </div>
+  
+  </div>
+
+
+
+
+    <!-- img-modal -->
+    <div class="modal">
+
+        
+        <div class="modal-content">
+        <span class="close">&times;</span>
+
+            <div class="modal-wrapper">
+
+             <div class="grey-container"><img class="modal-img" src="" alt=""></div>
+             <div class="modal-menu">
+                 
+                <div class="wrap-items-before-description">
+                    <div class="upper-subdivision">
+                      <div class="menu-item artist"><div class="line"></div></div>
+                      <div class="menu-item title"></div>
+                      <div class="menu-item date"></div>
+                 </div>
+                    <div class="lower-subdivision">
+                      <div class="menu-item place"></div>
+                     <div class="menu-item category"></div>
+                 </div>
+                </div>
+                 <div class="menu-item description"></div>
+                
+
+                </div>
+
+
+            </div>
+
+         
+        </div>
+      
+    </div>
+
+
+
+ <nav>
+    <div class="box-horizontal">
+    
+        <div class="anim-horizontal"></div>            <!-- anim start -->
+        
+        <div class="arrow-right">
+            <span class="span-right first"></span>
+            <span class="span-right second"></span>
+        </div>                                         <!-- anim end -->
+
+        <div class="trybox-left"></div>
+        <div class="trybox-right">
+            <div class="hero"><h1>Browse the collection's major artworks by dimension/canvas ratio.</h1><div class="hero-bottom-rectangle"></div></div>
+            <div class="menu">
+                <ul>
+                    <li><div class="open-info-modal" >ABOUT</div></li>
+                    <li><div class="open-faq-modal" >FAQs</div></li>
+                    <li><a href="https://www.artic.edu/" target="_blank">ARTIC</a></li>
+                  </ul>
+            </div>
+        </div>
+
+    </div>
+   
+ </nav> 
+    <div class="box-vertical">
+        <div class="anim-vertical"></div>
+        
+        <div class="arrow-bottom">
+           <span class="span-bottom first"></span>
+           <span class="span-bottom second"></span>
+        </div>
+    
+        <div class="trybox-vertical"></div>
+        
+        <div class="linebox-vertical"></div>
+    </div>
+
+     
+
+    <div class="box"> 
+
+        <div class="top"></div>
+        <div class="bottom"></div>
+        <div onmousedown="return false" class="bottom-big"></div>
+        <div class="left"></div>
+        <div class="right"></div>
+        <div onmousedown="return false" class="right-big"></div>
+        <img src="/chicago_logo_notext.png" alt="chicago institute logo" class="cai_logo" unselectable="on">
+
+     </div>
+
+
+  <div class="ui-bar">
+      <div class="invisible-icon">
+        
+      </div>
+
+
+
+      <div class="other-icons">
+        <div class="refresh-icon">
+            <div title="Shuffle" class="mysvg">
+               <svg width="100%" height="100%" viewBox="0 0 4286 4183" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-miterlimit:3;">
+                   <g transform="matrix(1,0,0,1,-2561.96,-5163.14)">
+                       <g transform="matrix(0.779874,0,0,0.779874,3243.9,1044.67)">
+                           <path d="M4065.78,5835.31L2430.93,5835.31C1972.15,5835.31 1532.17,6017.56 1207.77,6341.96C883.362,6666.36 701.114,7106.35 701.114,7565.13L701.114,9199.97" style="fill:none;stroke:currentColor;stroke-width:350.62px;"/>
+                       </g>
+                       <g transform="matrix(-1,0,0,1,8621.8,-916.994)">
+                           <path d="M4831.12,9136.49L5328.41,8639.19" style="fill:none;stroke:currentColor;stroke-width:273.44px;"/>
+                       </g>
+                       <g transform="matrix(1,0,0,1,1819.88,-532.563)">
+                           <path d="M1970.8,8752.06L2468.09,8254.76" style="fill:none;stroke:currentColor;stroke-width:273.44px;"/>
+                       </g>
+                       <g transform="matrix(-0.779874,0,0,-0.779874,6165.1,13464.4)">
+                           <path d="M4065.78,5835.31L2430.93,5835.31C1972.15,5835.31 1532.17,6017.56 1207.77,6341.96C883.362,6666.36 701.114,7106.35 701.114,7565.13C701.114,8390.17 701.114,9199.97 701.114,9199.97" style="fill:none;stroke:currentColor;stroke-width:350.62px;"/>
+                       </g>
+                       <g transform="matrix(1,0,0,-1,787.205,15426.1)">
+                           <path d="M4831.12,9136.49L5328.41,8639.19" style="fill:none;stroke:currentColor;stroke-width:273.44px;"/>
+                       </g>
+                       <g transform="matrix(-1,0,0,-1,7589.12,15041.6)">
+                           <path d="M1970.8,8752.06L2468.09,8254.76" style="fill:none;stroke:currentColor;stroke-width:273.44px;"/>
+                       </g>
+                   </g>
+               </svg>
+               
+            </div>
+         </div>
+        <div class="invert-icon">
+            <div title="Invert ratio" class="mysvg">
+                <svg width="100%" height="100%" viewBox="0 0 3852 3916" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-miterlimit:3;">
+                    <g transform="matrix(1,0,0,1,-1667.18,-832.117)">
+                        <g transform="matrix(1.11368,0,0,1.11368,-567.372,-1825.71)">
+                            <path d="M8622.07,3448.04L8622.07,4937.27C8622.07,5290.56 8335.25,5577.38 7981.96,5577.38C7981.96,5577.38 6492.73,5577.38 6492.73,5577.38C6139.44,5577.38 5852.62,5290.56 5852.62,4937.27C5852.62,4937.27 5852.62,3448.04 5852.62,3448.04C5852.62,3094.75 6139.44,2807.93 6492.73,2807.93C6492.73,2807.93 7981.96,2807.93 7981.96,2807.93C8335.25,2807.93 8622.07,3094.75 8622.07,3448.04Z" style="fill:none;stroke:black;stroke-width:245.53px;"/>
+                        </g>
+                        <g transform="matrix(0.900751,0,0,0.844726,458.956,196.337)">
+                            <path d="M3486.03,1264.46L1821.33,1264.46L1821.33,4358.28C1821.33,4644.21 2038.71,4876.01 2306.86,4876.01L3000.87,4876.01C3129.55,4876.01 3252.95,4821.5 3343.93,4724.48C3434.92,4627.46 3486.03,4495.88 3486.03,4358.67L3486.03,1264.46Z" style="fill:none;stroke:currentColor;stroke-width:313.15px;"/>
+                        </g>
+                        <g transform="matrix(5.51551e-17,-0.919893,0.827148,5.17246e-17,3425.37,5034.32)">
+                            <path d="M4098.15,-1602.91L2433.45,-1602.91L2433.45,1479.91C2433.45,1771.92 2646.3,2008.64 2908.87,2008.64L3623.08,2008.64C3885.45,2008.64 4098.15,1772.09 4098.15,1480.31L4098.15,-1602.91Z" style="fill:none;stroke:currentColor;stroke-width:312.59px;"/>
+                        </g>
+                    </g>
+                </svg>
+                
+            </div>
+      </div>
+      
+      <div class="square-icon">
+
+        <div title="Back to square" class="mysvg">
+            <svg width="100%" height="100%" viewBox="0 0 4182 4182" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-miterlimit:3;">
+                <g transform="matrix(1,0,0,1,-5401.82,-752.678)">
+                    <g transform="matrix(1.11368,0,0,1.11368,-567.372,-1825.71)">
+                        <path d="M8622.07,3448.04L8622.07,4937.27C8622.07,5290.56 8335.25,5577.38 7981.96,5577.38C7981.96,5577.38 6492.73,5577.38 6492.73,5577.38C6139.44,5577.38 5852.62,5290.56 5852.62,4937.27C5852.62,4937.27 5852.62,3448.04 5852.62,3448.04C5852.62,3094.75 6139.44,2807.93 6492.73,2807.93C6492.73,2807.93 7981.96,2807.93 7981.96,2807.93C8335.25,2807.93 8622.07,3094.75 8622.07,3448.04Z" style="fill:none;stroke:currentColor;stroke-width:245.53px;"/>
+                    </g>
+                    <g transform="matrix(5.51551e-17,-0.919893,0.827148,5.17246e-17,3425.37,5034.32)">
+                        <path d="M4098.15,-1602.91L2433.45,-1602.91L2433.45,1479.91C2433.45,1771.92 2646.3,2008.64 2908.87,2008.64L3623.08,2008.64C3885.45,2008.64 4098.15,1772.09 4098.15,1480.31L4098.15,-1602.91Z" style="fill:none;stroke:currentColor;stroke-width:312.59px;"/>
+                    </g>
+                </g>
+            </svg>
+            
+        </div>
+
+      </div></div>
+  </div>
+
+
+
+  <div class="img-wrapper">
+         
+       <!--
+        <div class="img-card">
+               <img src="" alt="hey" class = "img1" data-id="12345">
+        </div> -->
+
+  </div>
+
+
+
+    
+    <script src="art_institute_api.js" type="module"></script>
+    
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,165 @@
+.my-animation {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+
+  
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+
+
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+
+
+.artur-div {
+  background-color: brown;
+  border: 2px dotted;
+}
+
+
+/*****PHONE****/
+
+@media screen and (max-width: 29rem) {
+
+  body {
+    background-color: aquamarine;
+  }
+  .box-horizontal {
+    left: 6.25rem;
+    height: 6.25rem;
+    width: 70%;               /* ////////////// KEY FOR HORIZONTAL WIDTH OF THE WHOLE THING*/
+    
+  }
+  
+  .box-vertical {
+    height: 6.25rem;
+  
+  }
+  
+  
+  
+  /* ////////////// */
+  .box {
+  
+    width: 6.25rem;
+    height: 6.25rem;
+  }
+  
+  .cai_logo {
+    position: absolute;
+    height: 5.3rem;
+    width: 5.3rem;
+    bottom: 0.35rem;
+    left: 0.5rem;
+    pointer-events: none;
+    cursor: default;
+  
+  }
+  body {
+    margin: 0;
+  }
+
+  .hero-bottom-rectangle {
+    height: 50%;
+    width: 98%;
+
+    
+  }
+  h1 {
+    
+    font-size: 0.5rem;
+    visibility: hidden;
+  }
+
+  .img-wrapper {
+    width: 55%;
+  }
+
+  .ui-bar  {
+    width: 55%;
+  }
+
+  .hero {
+    width: 24%;
+    }
+
+  .menu {
+    width: 6%;
+  }
+
+  ul {
+    font-size: 1rem;
+
+  }
+
+  .menu {
+    display:none;
+  }
+
+
+  .anim-vertical {
+    width: 6rem;
+    height: 5.05rem;
+    border-width: 0.125rem;
+    top: -6rem;
+    border-top: 0;
+  
+  
+  }
+  
+  .anim-horizontal {
+    width: 5rem;
+    height: 6rem;
+    border-width: 0.125rem;
+    left: -6rem;
+  
+
+  
+  
+  
+ }
+
+ .trybox-vertical {
+  width: 6.25rem;
+  height: 16rem;
+
+  
+}
+
+.img-wrapper{
+
+
+  left: 6.6rem;
+  
+
+
+}
+
+.ui-bar {
+
+  left: 6.6rem;
+ }
+
+ .trybox-left {
+  min-width: 8rem;
+  
+
+}
+
+.trybox-right {
+  max-width: 4rem;
+}
+
+ }
